@@ -1,4 +1,74 @@
 package com.pluralsight;
 
+import java.util.List;
+
 public class Vehicle {
+    private String color;
+    private int numberOfPassengers;
+    private int cargoCapacity;
+    private int fuelCapacity;
+    private List<Wheel> wheels;
+
+
+    public Vehicle() {
+        System.out.println("I'm in the vehicle constructor");
+    }
+
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, List<Wheel> wheels) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.wheels = wheels;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getNumberOfPassengers() {
+        return numberOfPassengers;
+    }
+
+    public void setNumberOfPassengers(int numberOfPassengers) {
+        this.numberOfPassengers = numberOfPassengers;
+    }
+
+    public int getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public void setCargoCapacity(int cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
+    }
+
+    public int getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public List<Wheel> getWheels() {
+        return wheels;
+    }
+
+    public void setWheels(List<Wheel> wheels) {
+        this.wheels = wheels;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "color='" + color + '\'' +
+                ", numberOfPassengers=" + numberOfPassengers +
+                ", cargoCapacity=" + cargoCapacity +
+                ", fuelCapacity=" + fuelCapacity +
+                '}';
+    }
 }
