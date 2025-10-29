@@ -1,7 +1,5 @@
 package com.pluralsight;
 
-import java.util.List;
-
 public class Wheel {
     private int size;
     private String type;
@@ -25,5 +23,13 @@ public class Wheel {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Wheel{" +
+                "size=" + size +
+                ", type='" + type + '\'' +
+                '}';
     }
 }

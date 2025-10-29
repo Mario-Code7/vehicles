@@ -10,9 +10,9 @@ public class Vehicle {
     private List<Wheel> wheels;
 
 
-    public Vehicle() {
-        System.out.println("I'm in the vehicle constructor");
-    }
+//    public Vehicle() {
+//        System.out.println("I'm in the vehicle constructor");
+//    }
 
     public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, List<Wheel> wheels) {
         this.color = color;
@@ -69,6 +69,7 @@ public class Vehicle {
                 ", numberOfPassengers=" + numberOfPassengers +
                 ", cargoCapacity=" + cargoCapacity +
                 ", fuelCapacity=" + fuelCapacity +
+                ", wheels=" + wheels +
                 '}';
     }
 }
